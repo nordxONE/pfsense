@@ -298,11 +298,10 @@ foreach ($leases['lease'] as $data):
 					<? endif; ?>
 					<td>
 <?php if ($data['online'] == $online_string):?>
-							<span style="color:green; white-space: nowrap;"><i class="fa fa-arrow-up"></i>
+							<span style="color:green; white-space: nowrap;"><i class="fas fa-arrow-alt-circle-up"></i>
 <?php else: ?>
-							<span style="white-space: nowrap;"><i class="fa fa-arrow-down"></i>
+							<span style="color:red; white-space: nowrap;"><i class="fas fa-arrow-alt-circle-down"></i>
 <?php endif; ?>
-							<?=htmlspecialchars($data['online'])?>
 							</span>
 					</td>
 					<td><?=htmlspecialchars($data['act'])?></td>
